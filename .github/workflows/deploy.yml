@@ -24,7 +24,7 @@ jobs:
           version: 10.8.1 # Use the version specified in your packageManager field
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --no-frozen-lockfile
 
       - name: Build project
         run: pnpm run build
