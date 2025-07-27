@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 interface ImageData {
   src: string;
@@ -9,37 +9,18 @@ interface ImageData {
 const ImageGallery: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState(0);
   const [imageErrors, setImageErrors] = useState<Set<number>>(new Set());
+  const [preloadedImages, setPreloadedImages] = useState<Set<string>>(new Set());
 
   const images: ImageData[] = [
     {
-      src: "https://github.com/user-attachments/assets/20c62a05-287e-46e7-9fe0-048ef537e6aa",
-      alt: "Front view of the spacious family home",
-      caption: "Beautiful front facade with well-maintained landscaping"
-    },
-    {
-      src: "https://github.com/user-attachments/assets/9df5aa50-469d-4355-b6c2-33f71cba1bb2",
-      alt: "Side view of the property",
-      caption: "Side view showing the spacious layout and modern design"
-    },
-    {
       src: "https://github.com/user-attachments/assets/3eecc79a-7ac0-4124-96bd-4f10f183ce86",
-      alt: "Backyard and outdoor area",
-      caption: "Private backyard perfect for family gatherings and outdoor activities"
-    },
-    {
-      src: "https://github.com/user-attachments/assets/769e0997-75b1-461b-8c3c-cae510e79bcd",
-      alt: "Additional exterior view",
-      caption: "Another angle showcasing the property's curb appeal"
+      alt: "Frontyard and outdoor area",
+      caption: "Large front yard with spacious driveway and pedestrian walkway"
     },
     {
       src: "https://github.com/user-attachments/assets/bceff646-078f-41a4-9258-3987fd8fd39e",
       alt: "Spacious living room",
-      caption: "Open concept living room with plenty of natural light"
-    },
-    {
-      src: "https://github.com/user-attachments/assets/51b22e32-0af5-4c2d-bce9-dafa2efb7a7d",
-      alt: "Dining and living area",
-      caption: "Combined dining and living space perfect for entertaining"
+      caption: "Unique front entryway with large door"
     },
     {
       src: "https://github.com/user-attachments/assets/4a619af2-446d-4ddd-a321-0ad48e455fa7",
@@ -47,16 +28,61 @@ const ImageGallery: React.FC = () => {
       caption: "Fully equipped kitchen with modern appliances and ample storage"
     },
     {
+      src: "https://github.com/user-attachments/assets/9df5aa50-469d-4355-b6c2-33f71cba1bb2",
+      alt: "Side view of the property",
+      caption: "Open concept living room with plenty of natural light"
+    },
+    {
+      src: "https://github.com/user-attachments/assets/769e0997-75b1-461b-8c3c-cae510e79bcd",
+      alt: "Additional exterior view",
+      caption: "Another angle showcasing the property's curb appeal"
+    },
+    {
+      src: "https://github.com/user-attachments/assets/51b22e32-0af5-4c2d-bce9-dafa2efb7a7d",
+      alt: "Dining and living area",
+      caption: "Combined dining and living space perfect for entertaining"
+    },
+    {
       src: "https://github.com/user-attachments/assets/7aaaa342-5c14-4fc1-998a-1be6c3b6b5f9",
       alt: "Master bedroom",
       caption: "Spacious master bedroom with en-suite bathroom"
     },
     {
-      src: "https://github.com/user-attachments/assets/81040713-1cb2-48e1-b77c-edc622dbe3b9",
-      alt: "Additional bedroom",
-      caption: "Comfortable bedroom with built-in storage and natural light"
+      src: "https://github.com/user-attachments/assets/20c62a05-287e-46e7-9fe0-048ef537e6aa",
+      alt: "Front view of the spacious family home",
+      caption: "Beautiful front facade with well-maintained landscaping"
     }
   ];
+
+  // Preload all images when component mounts
+  useEffect(() => {
+    const preloadImages = async () => {
+      const preloadPromises = images.map((image, index) => {
+        return new Promise<void>((resolve, reject) => {
+          const img = new Image();
+          img.onload = () => {
+            setPreloadedImages(prev => new Set(prev).add(image.src));
+            console.log(`Preloaded image ${index + 1}: ${image.src}`);
+            resolve();
+          };
+          img.onerror = () => {
+            console.error(`Failed to preload image ${index + 1}: ${image.src}`);
+            reject();
+          };
+          img.src = image.src;
+        });
+      });
+
+      try {
+        await Promise.all(preloadPromises);
+        console.log('All images preloaded successfully!');
+      } catch (error) {
+        console.warn('Some images failed to preload:', error);
+      }
+    };
+
+    preloadImages();
+  }, []);
 
   const handleImageError = (index: number) => {
     console.error(`Failed to load image: ${images[index].src}`);

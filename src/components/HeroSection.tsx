@@ -1,6 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const HeroSection: React.FC = () => {
+  const heroImageSrc = "https://github.com/user-attachments/assets/20c62a05-287e-46e7-9fe0-048ef537e6aa";
+
+  // Preload hero image when component mounts
+  useEffect(() => {
+    const preloadHeroImage = () => {
+      const img = new Image();
+      img.onload = () => {
+        console.log('Hero image preloaded successfully!');
+      };
+      img.onerror = () => {
+        console.error('Failed to preload hero image');
+      };
+      img.src = heroImageSrc;
+    };
+
+    preloadHeroImage();
+  }, []);
+
   const handleImageError = () => {
     console.error('Failed to load hero image');
   };
@@ -15,7 +33,7 @@ const HeroSection: React.FC = () => {
       <div className="absolute inset-0">
         <img
           className="w-full h-full object-cover"
-          src="https://github.com/user-attachments/assets/20c62a05-287e-46e7-9fe0-048ef537e6aa"
+          src={heroImageSrc}
           alt="Spacious Family Home in Caroni"
           onError={handleImageError}
           onLoad={handleImageLoad}
@@ -27,7 +45,7 @@ const HeroSection: React.FC = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-            Stunning Spacious Family Home in Caroni
+            Spacious Family Home in Caroni
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 mb-8">
             Located in Kelly Village, 6 minutes from the airport
