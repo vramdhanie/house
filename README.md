@@ -9,6 +9,8 @@ A modern, responsive web application built with React and TypeScript to showcase
 [![pnpm](https://img.shields.io/badge/pnpm-10.8.1-F69220?logo=pnpm&logoColor=white)](https://pnpm.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+**🌐 Live Demo:** [house.vincentramdhanie.com](https://house.vincentramdhanie.com)
+
 ## ✨ Features
 
 - **Modern React 19** with TypeScript for type safety
@@ -17,6 +19,7 @@ A modern, responsive web application built with React and TypeScript to showcase
 - **Professional UI** optimized for real estate listings
 - **Component-Based Architecture** for maintainable code
 - **Testing Ready** with Vitest and React Testing Library
+- **Auto-Deployment** to custom domain via GitHub Actions
 
 ## 🚀 Quick Start
 
@@ -63,6 +66,7 @@ house/
 │   ├── App.tsx        # Main application component
 │   └── index.tsx      # Application entry point
 ├── public/            # Static assets
+│   └── CNAME          # Custom domain configuration
 ├── index.html         # HTML template
 ├── vite.config.ts     # Vite configuration
 ├── tailwind.config.js # Tailwind CSS configuration
@@ -77,6 +81,17 @@ house/
 - **Styling**: Tailwind CSS 4.1.11
 - **Package Manager**: pnpm
 - **Testing**: Vitest + React Testing Library
+- **Deployment**: GitHub Actions + Custom Domain
+
+## 🌐 Deployment
+
+This application is automatically deployed to [house.vincentramdhanie.com](https://house.vincentramdhanie.com) via GitHub Actions. Every push to the `main` branch triggers a new deployment.
+
+### Deployment Process:
+1. Code is pushed to `main` branch
+2. GitHub Actions workflow builds the project
+3. Built files are deployed to GitHub Pages
+4. Custom domain serves the application
 
 ## 🤝 Contributing
 
