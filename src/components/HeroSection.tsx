@@ -2,11 +2,11 @@ import React from 'react';
 
 const HeroSection: React.FC = () => {
   const handleImageError = () => {
-    console.error('Failed to load hero image: /images/exterior1.png');
+    console.error('Failed to load hero image');
   };
 
   const handleImageLoad = () => {
-    console.log('Successfully loaded hero image: /images/exterior1.png');
+    console.log('Successfully loaded hero image');
   };
 
   return (
@@ -15,7 +15,7 @@ const HeroSection: React.FC = () => {
       <div className="absolute inset-0">
         <img
           className="w-full h-full object-cover"
-          src="/images/exterior1.png"
+          src="https://via.placeholder.com/1920x1080/4F46E5/FFFFFF?text=Spacious+Family+Home+in+Caroni"
           alt="Spacious Family Home in Caroni"
           onError={handleImageError}
           onLoad={handleImageLoad}

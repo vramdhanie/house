@@ -12,47 +12,47 @@ const ImageGallery: React.FC = () => {
 
   const images: ImageData[] = [
     {
-      src: "/images/exterior1.png",
+      src: "https://via.placeholder.com/800x600/4F46E5/FFFFFF?text=Exterior+1",
       alt: "Front view of the spacious family home",
       caption: "Beautiful front facade with well-maintained landscaping"
     },
     {
-      src: "/images/exterior2.png",
+      src: "https://via.placeholder.com/800x600/7C3AED/FFFFFF?text=Exterior+2",
       alt: "Side view of the property",
       caption: "Side view showing the spacious layout and modern design"
     },
     {
-      src: "/images/exterior3.png",
+      src: "https://via.placeholder.com/800x600/059669/FFFFFF?text=Exterior+3",
       alt: "Backyard and outdoor area",
       caption: "Private backyard perfect for family gatherings and outdoor activities"
     },
     {
-      src: "/images/exterior4.png",
+      src: "https://via.placeholder.com/800x600/DC2626/FFFFFF?text=Exterior+4",
       alt: "Additional exterior view",
       caption: "Another angle showcasing the property's curb appeal"
     },
     {
-      src: "/images/livingroom.png",
+      src: "https://via.placeholder.com/800x600/EA580C/FFFFFF?text=Living+Room",
       alt: "Spacious living room",
       caption: "Open concept living room with plenty of natural light"
     },
     {
-      src: "/images/dining_living.png",
+      src: "https://via.placeholder.com/800x600/DB2777/FFFFFF?text=Dining+Living",
       alt: "Dining and living area",
       caption: "Combined dining and living space perfect for entertaining"
     },
     {
-      src: "/images/kitchen.png",
+      src: "https://via.placeholder.com/800x600/0891B2/FFFFFF?text=Kitchen",
       alt: "Modern kitchen",
       caption: "Fully equipped kitchen with modern appliances and ample storage"
     },
     {
-      src: "/images/master.png",
+      src: "https://via.placeholder.com/800x600/7C2D12/FFFFFF?text=Master+Bedroom",
       alt: "Master bedroom",
       caption: "Spacious master bedroom with en-suite bathroom"
     },
     {
-      src: "/images/bedroom.png",
+      src: "https://via.placeholder.com/800x600/1E40AF/FFFFFF?text=Bedroom",
       alt: "Additional bedroom",
       caption: "Comfortable bedroom with built-in storage and natural light"
     }
