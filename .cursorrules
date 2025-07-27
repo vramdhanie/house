@@ -1,0 +1,43 @@
+# Cursor Rules for House Project
+
+## Project Overview
+This is a React TypeScript project using:
+- React 19.1.0
+- TypeScript 4.9.5
+- Tailwind CSS 4.1.11
+- Vite 7.0.6 as the build tool
+- pnpm as the package manager
+
+## Package Manager
+- Use `pnpm` for all package management operations
+- Install dependencies with `pnpm install`
+- Add new packages with `pnpm add <package-name>`
+- Add dev dependencies with `pnpm add -D <package-name>`
+- Run scripts with `pnpm <script-name>`
+
+## Code Style & Conventions
+- Use TypeScript for all new files
+- Follow React functional component patterns with hooks
+- Use Tailwind CSS for styling
+- Maintain consistent file naming (PascalCase for components, camelCase for utilities)
+- Use proper TypeScript types and interfaces
+
+## Project Structure
+- Components go in `src/components/`
+- Utilities go in `src/utils/`
+- Types/interfaces go in `src/types/`
+- Keep components small and focused
+- Use proper imports and exports
+
+## Testing
+- Use Vitest for testing
+- Use React Testing Library for component testing
+- Write tests for new components and utilities
+- Follow testing best practices with user-centric testing
+
+## Development Workflow
+- Use `pnpm dev` for development server
+- Use `pnpm build` for production builds
+- Use `pnpm preview` to preview production build
+- Use `pnpm test` for running tests
+- Always check for TypeScript errors before committing 
