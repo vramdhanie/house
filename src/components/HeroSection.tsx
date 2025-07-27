@@ -15,7 +15,7 @@ const HeroSection: React.FC = () => {
       <div className="absolute inset-0">
         <img
           className="w-full h-full object-cover"
-          src="https://via.placeholder.com/1920x1080/4F46E5/FFFFFF?text=Spacious+Family+Home+in+Caroni"
+          src="https://github.com/user-attachments/assets/20c62a05-287e-46e7-9fe0-048ef537e6aa"
           alt="Spacious Family Home in Caroni"
           onError={handleImageError}
           onLoad={handleImageLoad}

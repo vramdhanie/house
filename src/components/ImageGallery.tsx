@@ -12,49 +12,34 @@ const ImageGallery: React.FC = () => {
 
   const images: ImageData[] = [
     {
-      src: "https://via.placeholder.com/800x600/4F46E5/FFFFFF?text=Exterior+1",
+      src: "https://github.com/user-attachments/assets/20c62a05-287e-46e7-9fe0-048ef537e6aa",
       alt: "Front view of the spacious family home",
       caption: "Beautiful front facade with well-maintained landscaping"
     },
     {
-      src: "https://via.placeholder.com/800x600/7C3AED/FFFFFF?text=Exterior+2",
+      src: "https://github.com/user-attachments/assets/9df5aa50-469d-4355-b6c2-33f71cba1bb2",
       alt: "Side view of the property",
       caption: "Side view showing the spacious layout and modern design"
     },
     {
-      src: "https://via.placeholder.com/800x600/059669/FFFFFF?text=Exterior+3",
+      src: "https://github.com/user-attachments/assets/3eecc79a-7ac0-4124-96bd-4f10f183ce86",
       alt: "Backyard and outdoor area",
       caption: "Private backyard perfect for family gatherings and outdoor activities"
     },
     {
-      src: "https://via.placeholder.com/800x600/DC2626/FFFFFF?text=Exterior+4",
+      src: "https://github.com/user-attachments/assets/769e0997-75b1-461b-8c3c-cae510e79bcd",
       alt: "Additional exterior view",
       caption: "Another angle showcasing the property's curb appeal"
     },
     {
-      src: "https://via.placeholder.com/800x600/EA580C/FFFFFF?text=Living+Room",
+      src: "https://github.com/user-attachments/assets/bceff646-078f-41a4-9258-3987fd8fd39e",
       alt: "Spacious living room",
       caption: "Open concept living room with plenty of natural light"
     },
     {
-      src: "https://via.placeholder.com/800x600/DB2777/FFFFFF?text=Dining+Living",
+      src: "https://github.com/user-attachments/assets/51b22e32-0af5-4c2d-bce9-dafa2efb7a7d",
       alt: "Dining and living area",
       caption: "Combined dining and living space perfect for entertaining"
-    },
-    {
-      src: "https://via.placeholder.com/800x600/0891B2/FFFFFF?text=Kitchen",
-      alt: "Modern kitchen",
-      caption: "Fully equipped kitchen with modern appliances and ample storage"
-    },
-    {
-      src: "https://via.placeholder.com/800x600/7C2D12/FFFFFF?text=Master+Bedroom",
-      alt: "Master bedroom",
-      caption: "Spacious master bedroom with en-suite bathroom"
-    },
-    {
-      src: "https://via.placeholder.com/800x600/1E40AF/FFFFFF?text=Bedroom",
-      alt: "Additional bedroom",
-      caption: "Comfortable bedroom with built-in storage and natural light"
     }
   ];
 
