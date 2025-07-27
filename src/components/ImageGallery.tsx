@@ -63,6 +63,10 @@ const ImageGallery: React.FC = () => {
     setImageErrors(prev => new Set(prev).add(index));
   };
 
+  const handleImageLoad = (index: number) => {
+    console.log(`Successfully loaded image: ${images[index].src}`);
+  };
+
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -79,6 +83,7 @@ const ImageGallery: React.FC = () => {
               alt={images[selectedImage].alt}
               className="w-full h-full object-cover"
               onError={() => handleImageError(selectedImage)}
+              onLoad={() => handleImageLoad(selectedImage)}
             />
             {/* Caption overlay */}
             <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-75 text-white p-4">
@@ -109,6 +114,7 @@ const ImageGallery: React.FC = () => {
                   alt={image.alt}
                   className="w-full h-full object-cover"
                   onError={() => handleImageError(index)}
+                  onLoad={() => handleImageLoad(index)}
                 />
               )}
               {/* Hover caption for thumbnails - only visible on hover */}
@@ -127,7 +133,6 @@ const ImageGallery: React.FC = () => {
             {selectedImage + 1} of {images.length} photos
           </span>
         </div>
-
       </div>
     </section>
   );

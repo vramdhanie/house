@@ -1,5 +1,14 @@
+import React from 'react';
 
 const HeroSection: React.FC = () => {
+  const handleImageError = () => {
+    console.error('Failed to load hero image: /images/exterior1.png');
+  };
+
+  const handleImageLoad = () => {
+    console.log('Successfully loaded hero image: /images/exterior1.png');
+  };
+
   return (
     <section className="relative bg-gray-900">
       {/* Hero Image */}
@@ -8,6 +17,8 @@ const HeroSection: React.FC = () => {
           className="w-full h-full object-cover"
           src="/images/exterior1.png"
           alt="Spacious Family Home in Caroni"
+          onError={handleImageError}
+          onLoad={handleImageLoad}
         />
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
       </div>
@@ -16,7 +27,7 @@ const HeroSection: React.FC = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-            Spacious Family Home
+            Stunning Spacious Family Home in Caroni
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 mb-8">
             Located in Kelly Village, 6 minutes from the airport
