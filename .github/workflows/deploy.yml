@@ -29,6 +29,20 @@ jobs:
       - name: Build project
         run: pnpm run build
 
+      - name: List build directory contents
+        run: ls -la ./dist
+
+      - name: Check if dist directory exists
+        run: |
+          if [ -d "./dist" ]; then
+            echo "✅ dist directory exists"
+            echo "Contents:"
+            ls -la ./dist
+          else
+            echo "❌ dist directory does not exist"
+            exit 1
+          fi
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
@@ -37,3 +51,9 @@ jobs:
           force_orphan: true
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Check gh-pages branch
+        run: |
+          git fetch origin gh-pages
+          echo "Latest commit on gh-pages:"
+          git log -1 --pretty=format:"%h - %an, %ar : %s" origin/gh-pages
