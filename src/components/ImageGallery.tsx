@@ -40,6 +40,21 @@ const ImageGallery: React.FC = () => {
       src: "https://github.com/user-attachments/assets/51b22e32-0af5-4c2d-bce9-dafa2efb7a7d",
       alt: "Dining and living area",
       caption: "Combined dining and living space perfect for entertaining"
+    },
+    {
+      src: "https://github.com/user-attachments/assets/4a619af2-446d-4ddd-a321-0ad48e455fa7",
+      alt: "Modern kitchen",
+      caption: "Fully equipped kitchen with modern appliances and ample storage"
+    },
+    {
+      src: "https://github.com/user-attachments/assets/7aaaa342-5c14-4fc1-998a-1be6c3b6b5f9",
+      alt: "Master bedroom",
+      caption: "Spacious master bedroom with en-suite bathroom"
+    },
+    {
+      src: "https://github.com/user-attachments/assets/81040713-1cb2-48e1-b77c-edc622dbe3b9",
+      alt: "Additional bedroom",
+      caption: "Comfortable bedroom with built-in storage and natural light"
     }
   ];
 
