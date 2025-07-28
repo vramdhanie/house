@@ -13,25 +13,25 @@ const ImageGallery: React.FC = () => {
 
   const images: ImageData[] = [
     {
+      src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/exterior2_s6rioz.png",
+      alt: "Side view of the property",
+      caption: "Large front yard with spacious driveway and pedestrian walkway"
+    },
+    {
+      src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/Front_door_iz4obu.jpg",
+      alt: "Front door entrance",
+      caption: "Welcoming front entrance with quality door and hardware"
+    },
+    {
       src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/exterior1_xbopil.png",
       alt: "Front view of the spacious family home",
       caption: "Beautiful front facade with well-maintained landscaping"
     },
     {
-      src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/exterior2_s6rioz.png",
-      alt: "Side view of the property",
-      caption: "Side view showing the spacious layout and modern design"
-    },
-    {
-      src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/exterior3_ujgwjj.png",
-      alt: "Frontyard and outdoor area",
-      caption: "Large front yard with spacious driveway and pedestrian walkway"
-    },
-    {
-      src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/exterior4_nop6sm.png",
-      alt: "Additional exterior view",
-      caption: "Another angle showcasing the property's curb appeal"
-    },
+        src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/kitchen_nop6sm.png",
+        alt: "Modern kitchen",
+        caption: "Fully equipped kitchen with modern appliances and ample storage"
+      },
     {
       src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/livingroom_vveth5.png",
       alt: "Spacious living room",
@@ -43,29 +43,29 @@ const ImageGallery: React.FC = () => {
       caption: "Combined dining and living space perfect for entertaining"
     },
     {
-      src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/kitchen_nop6sm.png",
-      alt: "Modern kitchen",
-      caption: "Fully equipped kitchen with modern appliances and ample storage"
-    },
-    {
-      src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/Master_bedroom_fldj0z.png",
-      alt: "Master bedroom",
-      caption: "Spacious master bedroom with en-suite bathroom"
-    },
-    {
       src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/bedroom_p1446l.png",
       alt: "Additional bedroom",
       caption: "Comfortable bedroom with built-in storage and natural light"
     },
     {
-      src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/Front_door_iz4obu.jpg",
-      alt: "Front door entrance",
-      caption: "Welcoming front entrance with quality door and hardware"
+      src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/Master_bedroom_fldj0z.jpg",
+      alt: "Master bedroom",
+      caption: "Spacious master bedroom with en-suite bathroom"
     },
     {
       src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/Master_bath_1_tmirps.jpg",
       alt: "Master bathroom",
       caption: "Luxurious master bathroom with modern fixtures"
+    },
+    {
+      src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/Master_bath_2_xvz9r4.jpg",
+      alt: "Additional master bathroom angle",
+      caption: "Another angle of the master bathroom"
+    },
+    {
+      src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/Master_closet_2_kqenpd.jpg",
+      alt: "Master closet",
+      caption: "Spacious master closet with excellent storage solutions"
     },
     {
       src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/Master_closet_1_lwowxz.jpg",
@@ -123,11 +123,11 @@ const ImageGallery: React.FC = () => {
 
         {/* Main Image with Caption */}
         <div className="mb-8">
-          <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
+          <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg bg-gray-100">
             <img
               src={images[selectedImage].src}
               alt={images[selectedImage].alt}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
               onError={() => handleImageError(selectedImage)}
               onLoad={() => handleImageLoad(selectedImage)}
             />
@@ -158,7 +158,7 @@ const ImageGallery: React.FC = () => {
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                   onError={() => handleImageError(index)}
                   onLoad={() => handleImageLoad(index)}
                 />
