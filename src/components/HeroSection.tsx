@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 const HeroSection: React.FC = () => {
-  const heroImageSrc = "https://github.com/user-attachments/assets/20c62a05-287e-46e7-9fe0-048ef537e6aa";
+  const heroImageSrc = "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/exterior1_xbopil.png";
 
   // Preload hero image when component mounts
   useEffect(() => {
