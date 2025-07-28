@@ -7,7 +7,7 @@ const PropertyDetails: React.FC = () => {
     { icon: "🚿", label: "Bathrooms", value: "2.5" },
     { icon: "🚗", label: "Garage", value: "2-car enclosed" },
     { icon: "🌳", label: "Lot Size", value: "10,000 sq ft (50' x 200')" },
-    { icon: "📅", label: "Exterior Paint", value: "2 years ago" },
+    { icon: "❄️", label: "Cooling", value: "Fully air conditioned" },
   ];
 
   const landFeatures = [

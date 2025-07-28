@@ -20,7 +20,7 @@ const ImageGallery: React.FC = () => {
     {
       src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/front_yard_bq97p9.jpg",
       alt: "Front view of the property",
-      caption: "Front yard"
+      caption: "Remote control garage"
     },
     {
         src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/exterior5_racs9m.jpg",
@@ -35,12 +35,12 @@ const ImageGallery: React.FC = () => {
     {
         src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/side_gate_yxnlle.jpg",
         alt: "Side gate",
-        caption: "Side gate to backyard"
+        caption: "Side gate and high fence secure the backyard"
       },
     {
       src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/backyard_eqxofy.jpg",
       alt: "Backyard",
-      caption: "Backyard - outdoor toilet and storage room"
+      caption: "Backyard - space for outdoor toilet and storage room including water pump"
     },
       {
         src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/pedestrian_gate_y8j4nq.jpg",
