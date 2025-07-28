@@ -30,7 +30,7 @@ const ImageGallery: React.FC = () => {
     {
       src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/Front_door_iz4obu.jpg",
       alt: "Front door entrance",
-      caption: "Front entrance"
+      caption: "Main entrance"
     },
     {
         src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/side_gate_yxnlle.jpg",
