@@ -40,7 +40,7 @@ const PropertyDetails: React.FC = () => {
     "Storage shelves in garage",
     "Large open floor plan kitchen, dining, and living room",
     "New kitchen cabinets with quartz countertops",
-    "7-foot kitchen island with second sink",
+    "7-foot kitchen island with prep sink",
     "Dishwasher included",
     "Separate laundry/utility room",
     "150L solar water heater",
@@ -143,7 +143,7 @@ const PropertyDetails: React.FC = () => {
         <div className="mt-8 bg-white p-8 rounded-lg shadow-sm">
           <h3 className="text-2xl font-bold text-gray-900 mb-4">Location & Neighborhood</h3>
           <p className="text-gray-600 mb-4">
-            This exceptional property is situated in the desirable Kelly Village area of Caroni, offering the perfect 
+            This exceptional property is situated in the Kelly Village area of Caroni, offering the perfect 
             balance of tranquility and convenience. 
           </p>
           <p className="text-gray-600">
