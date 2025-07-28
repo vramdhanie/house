@@ -18,20 +18,55 @@ const ImageGallery: React.FC = () => {
       caption: "Large front yard with driveway and pedestrian walkway"
     },
     {
+      src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/front_yard_bq97p9.jpg",
+      alt: "Front view of the property",
+      caption: "Front yard"
+    },
+    {
+        src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/exterior5_racs9m.jpg",
+        alt: "Side view of the property",
+        caption: "Another view of front yard"
+      },
+    {
       src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/Front_door_iz4obu.jpg",
       alt: "Front door entrance",
       caption: "Front entrance"
     },
     {
+        src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/side_gate_yxnlle.jpg",
+        alt: "Side gate",
+        caption: "Side gate to backyard"
+      },
+    {
+      src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/backyard_eqxofy.jpg",
+      alt: "Backyard",
+      caption: "Backyard - outdoor toilet and storage room"
+    },
+      {
+        src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/pedestrian_gate_y8j4nq.jpg",
+        alt: "Pedestrian gate",
+        caption: "Pedestrian gate"
+      },
+    {
         src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/kitchen_nop6sm.png",
         alt: "Modern kitchen",
         caption: "Kitchen - recently renovated"
+      },
+      {
+        src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/kitchen_detail_imof4d.jpg",
+        alt: "Kitchen detail",
+        caption: "Kitchen detail"
       },
     {
       src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/livingroom_vveth5.png",
       alt: "Spacious living room",
       caption: "Living room"
     },
+    {
+        src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/living_room_ohy2y2.jpg",
+        alt: "Spacious living room",
+        caption: "Open concept"
+      },
     {
       src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/dining_living_xbxulo.png",
       alt: "Dining and living area",
