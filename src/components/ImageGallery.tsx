@@ -15,17 +15,12 @@ const ImageGallery: React.FC = () => {
     {
       src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/exterior2_s6rioz.png",
       alt: "Side view of the property",
-      caption: "Large front yard with spacious driveway and pedestrian walkway"
+      caption: "Large front yard with driveway and pedestrian walkway"
     },
     {
       src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/Front_door_iz4obu.jpg",
       alt: "Front door entrance",
-      caption: "Welcoming front entrance with quality door and hardware"
-    },
-    {
-      src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/exterior1_xbopil.png",
-      alt: "Front view of the spacious family home",
-      caption: "Beautiful front facade with well-maintained landscaping"
+      caption: "Front entrance"
     },
     {
         src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/kitchen_nop6sm.png",
@@ -118,7 +113,6 @@ const ImageGallery: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Property Gallery</h2>
-          <p className="text-lg text-gray-600">Explore every detail of this magnificent home</p>
         </div>
 
         {/* Main Image with Caption */}
