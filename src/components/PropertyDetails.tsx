@@ -6,7 +6,7 @@ const PropertyDetails: React.FC = () => {
     { icon: "🛏️", label: "Bedrooms", value: "4 + Office" },
     { icon: "🚿", label: "Bathrooms", value: "2.5" },
     { icon: "🚗", label: "Garage", value: "2-car enclosed" },
-    { icon: "🌳", label: "Lot Size", value: "50' x 200'" },
+    { icon: "🌳", label: "Lot Size", value: "10,000 sq ft (50' x 200')" },
     { icon: "📅", label: "Exterior Paint", value: "2 years ago" },
   ];
 
@@ -14,7 +14,7 @@ const PropertyDetails: React.FC = () => {
     "Freehold land ownership",
     "Plot size: 50' x 200' (10,000 sq ft)",
     "Located in Kelly Village, Caroni",
-    "About 6 minutes from the airport",
+    "About 7 minutes from the airport",
     "15 minutes from Trincity Mall",
     "20 minutes from PriceSmart"
   ];
@@ -57,7 +57,7 @@ const PropertyDetails: React.FC = () => {
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Property Overview</h2>
             <p className="text-lg text-gray-600 mb-8">
               This stunning spacious family home in Kelly Village, Caroni offers the perfect blend of comfort and functionality. 
-              Located just 6 minutes from the airport, this property features modern amenities, high-quality finishes, 
+              Located just 7 minutes from the airport, this property features modern amenities, high-quality finishes, 
               and exceptional attention to detail throughout.
             </p>
             
@@ -147,7 +147,7 @@ const PropertyDetails: React.FC = () => {
             balance of tranquility and convenience. 
           </p>
           <p className="text-gray-600">
-            Just 6 minutes from the airport, this location provides the ideal setting for families seeking a peaceful 
+            Just 7 minutes from the airport, this location provides the ideal setting for families seeking a peaceful 
             residential area with all the amenities of modern life within reach. The property offers a quiet, family-friendly 
             environment while maintaining excellent connectivity to major transportation routes.
           </p>

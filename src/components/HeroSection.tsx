@@ -48,7 +48,7 @@ const HeroSection: React.FC = () => {
             Spacious Family Home in Caroni
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 mb-8">
-            Located in Kelly Village, 6 minutes from the airport
+            Located in Kelly Village, 7 minutes from the airport
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
             <div className="bg-white bg-opacity-90 rounded-lg px-6 py-4">
