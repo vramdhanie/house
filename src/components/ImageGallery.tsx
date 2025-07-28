@@ -25,47 +25,47 @@ const ImageGallery: React.FC = () => {
     {
         src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/kitchen_nop6sm.png",
         alt: "Modern kitchen",
-        caption: "Fully equipped kitchen with modern appliances and ample storage"
+        caption: "Kitchen - recently renovated"
       },
     {
       src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/livingroom_vveth5.png",
       alt: "Spacious living room",
-      caption: "Open concept living room with plenty of natural light"
+      caption: "Living room"
     },
     {
       src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/dining_living_xbxulo.png",
       alt: "Dining and living area",
-      caption: "Combined dining and living space perfect for entertaining"
+      caption: "Dining and living area"
     },
     {
       src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/bedroom_p1446l.png",
       alt: "Additional bedroom",
-      caption: "Comfortable bedroom with built-in storage and natural light"
+      caption: "Bedroom"
     },
     {
       src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/Master_bedroom_fldj0z.jpg",
       alt: "Master bedroom",
-      caption: "Spacious master bedroom with en-suite bathroom"
+      caption: "Master bedroom"
     },
     {
       src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/Master_bath_1_tmirps.jpg",
       alt: "Master bathroom",
-      caption: "Luxurious master bathroom with modern fixtures"
+      caption: "Master bathroom"
     },
     {
       src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/Master_bath_2_xvz9r4.jpg",
       alt: "Additional master bathroom angle",
-      caption: "Another angle of the master bathroom"
+      caption: "Master bathroom"
     },
     {
       src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/Master_closet_2_kqenpd.jpg",
       alt: "Master closet",
-      caption: "Spacious master closet with excellent storage solutions"
+      caption: "Master closet"
     },
     {
       src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/Master_closet_1_lwowxz.jpg",
       alt: "Master closet",
-      caption: "Spacious master closet with excellent storage solutions"
+      caption: "Master closet"
     }
   ];
 
