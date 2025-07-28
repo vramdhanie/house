@@ -13,24 +13,19 @@ const ImageGallery: React.FC = () => {
 
   const images: ImageData[] = [
     {
-      src: "https://github.com/user-attachments/assets/3eecc79a-7ac0-4124-96bd-4f10f183ce86",
-      alt: "Frontyard and outdoor area",
-      caption: "Large front yard with spacious driveway and pedestrian walkway"
-    },
-    {
-      src: "https://github.com/user-attachments/assets/bceff646-078f-41a4-9258-3987fd8fd39e",
-      alt: "Spacious living room",
-      caption: "Unique front entryway with large door"
-    },
-    {
-      src: "https://github.com/user-attachments/assets/4a619af2-446d-4ddd-a321-0ad48e455fa7",
-      alt: "Modern kitchen",
-      caption: "Fully equipped kitchen with modern appliances and ample storage"
+      src: "https://github.com/user-attachments/assets/20c62a05-287e-46e7-9fe0-048ef537e6aa",
+      alt: "Front view of the spacious family home",
+      caption: "Beautiful front facade with well-maintained landscaping"
     },
     {
       src: "https://github.com/user-attachments/assets/9df5aa50-469d-4355-b6c2-33f71cba1bb2",
       alt: "Side view of the property",
-      caption: "Open concept living room with plenty of natural light"
+      caption: "Side view showing the spacious layout and modern design"
+    },
+    {
+      src: "https://github.com/user-attachments/assets/3eecc79a-7ac0-4124-96bd-4f10f183ce86",
+      alt: "Frontyard and outdoor area",
+      caption: "Large front yard with spacious driveway and pedestrian walkway"
     },
     {
       src: "https://github.com/user-attachments/assets/769e0997-75b1-461b-8c3c-cae510e79bcd",
@@ -38,9 +33,19 @@ const ImageGallery: React.FC = () => {
       caption: "Another angle showcasing the property's curb appeal"
     },
     {
+      src: "https://github.com/user-attachments/assets/bceff646-078f-41a4-9258-3987fd8fd39e",
+      alt: "Spacious living room",
+      caption: "Open concept living room with plenty of natural light"
+    },
+    {
       src: "https://github.com/user-attachments/assets/51b22e32-0af5-4c2d-bce9-dafa2efb7a7d",
       alt: "Dining and living area",
       caption: "Combined dining and living space perfect for entertaining"
+    },
+    {
+      src: "https://github.com/user-attachments/assets/4a619af2-446d-4ddd-a321-0ad48e455fa7",
+      alt: "Modern kitchen",
+      caption: "Fully equipped kitchen with modern appliances and ample storage"
     },
     {
       src: "https://github.com/user-attachments/assets/7aaaa342-5c14-4fc1-998a-1be6c3b6b5f9",
@@ -48,9 +53,24 @@ const ImageGallery: React.FC = () => {
       caption: "Spacious master bedroom with en-suite bathroom"
     },
     {
-      src: "https://github.com/user-attachments/assets/20c62a05-287e-46e7-9fe0-048ef537e6aa",
-      alt: "Front view of the spacious family home",
-      caption: "Beautiful front facade with well-maintained landscaping"
+      src: "https://github.com/user-attachments/assets/82a09038-8ae4-47a1-98f5-b081b95a965d",
+      alt: "Additional bedroom",
+      caption: "Comfortable bedroom with built-in storage and natural light"
+    },
+    {
+      src: "https://github.com/user-attachments/assets/8acde1ab-acc0-4ec2-b96e-d9bb9a0a022a",
+      alt: "Bathroom",
+      caption: "Modern bathroom with quality fixtures and finishes"
+    },
+    {
+      src: "https://github.com/user-attachments/assets/ae2d894d-b089-4ca3-ab64-edab740740ae",
+      alt: "Additional interior view",
+      caption: "Another interior perspective showing the home's layout"
+    },
+    {
+      src: "https://github.com/user-attachments/assets/c3fa1c2e-1995-48c9-bf46-f281aff46324",
+      alt: "Exterior detail",
+      caption: "Exterior detail highlighting the property's architectural features"
     }
   ];
 
