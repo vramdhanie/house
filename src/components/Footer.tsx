@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
           {/* Left side - Property info */}
           <div className="flex items-center space-x-6 mb-4 md:mb-0">
             <div className="text-center md:text-left">
-              <div className="text-2xl font-bold text-green-400">$2,100,000</div>
+              <div className="text-2xl font-bold text-green-400">$1,950,000</div>
               <div className="text-sm text-gray-400">Asking Price</div>
             </div>
             <div className="hidden md:block text-gray-400">|</div>

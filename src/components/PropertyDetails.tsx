@@ -43,7 +43,7 @@ const PropertyDetails: React.FC = () => {
     "Dishwasher included",
     "Storage shelves in garage",
     "Separate laundry/utility room",
-    "4 bedrooms including master suite with ample closet space in each bedroom",
+    "4 bedrooms, including a master suite, with ample closet space in each",
     "Extra walk-in closet near garage for bulk storage",
     "Continuously serviced by Rentokil since construction"
   ];
@@ -139,7 +139,7 @@ const PropertyDetails: React.FC = () => {
         <div className="mt-8 bg-white p-8 rounded-lg shadow-sm">
           <h3 className="text-2xl font-bold text-gray-900 mb-4">Location & Neighborhood</h3>
           <p className="text-gray-600 mb-4">
-          This street in Kelly Village is very quiet and family-oriented with an active neighbourhood watch. The neighbours are very friendly and look out for each other. Our children enjoyed riding their bikes and scooters on the road on evenings, or playing cricket, football, volleyball or badminton in the backyard. We have spent 13 very happy years here making unforgettable memories. 
+          This street in Kelly Village is very quiet and family-oriented with an active neighbourhood watch. The neighbours are  friendly and look out for each other. Our children enjoyed riding their bikes and scooters on the road on evenings, or playing cricket, football, volleyball or badminton in the backyard. We have spent 14 very happy years here making unforgettable memories.
           </p>
           <p className="text-gray-600">
           This home is conveniently located as it is just off the Caroni South Bank Road and minutes from the airport and Churchill Roosevelt Highway. Trincity Mall, Pricesmart and Valpark Shopping Plaza are all 15-20 minutes away.

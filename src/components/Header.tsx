@@ -10,7 +10,7 @@ const Header: React.FC = () => {
           </div>
           <div className="flex items-center space-x-4">
             <div className="text-right">
-              <div className="text-lg font-semibold text-green-600">$2,100,000</div>
+              <div className="text-lg font-semibold text-green-600">$1,950,000</div>
               <div className="text-sm text-gray-500">Asking Price</div>
             </div>
           </div>

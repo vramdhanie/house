@@ -52,7 +52,7 @@ const HeroSection: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
             <div className="bg-white bg-opacity-90 rounded-lg px-6 py-4">
-              <div className="text-3xl font-bold text-green-600">$2,100,000</div>
+              <div className="text-3xl font-bold text-green-600">$1,950,000</div>
               <div className="text-sm text-gray-600">Asking Price</div>
             </div>
             <div className="bg-white bg-opacity-90 rounded-lg px-6 py-4">
