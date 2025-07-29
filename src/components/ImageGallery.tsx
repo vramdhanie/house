@@ -42,6 +42,11 @@ const ImageGallery: React.FC = () => {
       alt: "Backyard",
       caption: "Backyard - space for outdoor toilet and storage room including water pump"
     },
+    {
+        src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/limetree_qk4tvb.jpg",
+        alt: "Lime tree",
+        caption: "Lime tree in the backyard"
+      },
       {
         src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/pedestrian_gate_y8j4nq.jpg",
         alt: "Pedestrian gate",
