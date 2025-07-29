@@ -22,7 +22,7 @@ const PropertyDetails: React.FC = () => {
   const yardFeatures = [
     "Front yard: 50' x 30' with parking and driveway",
     "Remote controlled gate for driveway access",
-    "Pedestrian gate with path to main entrance",
+    "Pedestrian gate with path to main entry",
     "Side gates and high fence secure the backyard",
     "Fruit trees: julie mango, starch mango, cherry, portugal, plum, coconut, limes",
     "Tank stand/storage room with 1,400 gallons water capacity",
@@ -31,20 +31,20 @@ const PropertyDetails: React.FC = () => {
   ];
 
   const houseFeatures = [
+      "Large open floor plan including kitchen, dining, and living room",
+      "Additional room usable as office or 5th bedroom",
     "Fully air conditioned with regular service",
-    "4 bedrooms including master suite with closets",
-    "Additional room usable as office or 5th bedroom",
-    "2.5 bathrooms including master bath with shower, tub, and dual sinks",
-    "Extra walk-in closet near foyer for bulk storage",
-    "Enclosed 2-car garage with remote controlled roll-up door",
-    "Storage shelves in garage",
-    "Large open floor plan kitchen, dining, and living room",
     "New kitchen cabinets with quartz countertops",
-    "7-foot kitchen island with prep sink",
-    "Dishwasher included",
-    "Separate laundry/utility room",
+    "2.5 bathrooms including master bath with shower, tub, and dual sinks",
     "150L solar water heater",
-    "Covered back porch with wrought iron gates",
+    "7-foot kitchen island with prep sink",
+    "Enclosed 2-car garage with remote controlled roll-up door",
+    "Covered back porch enclosed with wrought iron gates",
+    "Dishwasher included",
+    "Storage shelves in garage",
+    "Separate laundry/utility room",
+    "4 bedrooms including master suite with ample closet space in each bedroom",
+    "Extra walk-in closet near garage for bulk storage",
     "Continuously serviced by Rentokil since construction"
   ];
 
@@ -55,11 +55,7 @@ const PropertyDetails: React.FC = () => {
           {/* Property Overview */}
           <div>
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Property Overview</h2>
-            <p className="text-lg text-gray-600 mb-8">
-              This stunning spacious family home in Kelly Village, Caroni offers the perfect blend of comfort and functionality. 
-              Located just 7 minutes from the airport, this property features modern amenities, high-quality finishes, 
-              and exceptional attention to detail throughout.
-            </p>
+            
             
             {/* Key Features Grid */}
             <div className="grid grid-cols-2 gap-4 mb-8">
@@ -143,13 +139,10 @@ const PropertyDetails: React.FC = () => {
         <div className="mt-8 bg-white p-8 rounded-lg shadow-sm">
           <h3 className="text-2xl font-bold text-gray-900 mb-4">Location & Neighborhood</h3>
           <p className="text-gray-600 mb-4">
-            This exceptional property is situated in the Kelly Village area of Caroni, offering the perfect 
-            balance of tranquility and convenience. 
+          This street in Kelly Village is very quiet and family-oriented with an active neighbourhood watch. The neighbours are very friendly and look out for each other. Our children enjoyed riding their bikes and scooters on the road on evenings, or playing cricket, football, volleyball or badminton in the backyard. We have spent 13 very happy years here making unforgettable memories. 
           </p>
           <p className="text-gray-600">
-            Just 7 minutes from the airport, this location provides the ideal setting for families seeking a peaceful 
-            residential area with all the amenities of modern life within reach. The property offers a quiet, family-friendly 
-            environment while maintaining excellent connectivity to major transportation routes.
+          This home is conveniently located as it is just off the Caroni South Bank Road and minutes from the airport and Churchill Roosevelt Highway. Trincity Mall, Pricesmart and Valpark Shopping Plaza are all 15-20 minutes away.
           </p>
         </div>
       </div>
