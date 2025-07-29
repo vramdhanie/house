@@ -20,7 +20,7 @@ const ContactSection: React.FC = () => {
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Call Now</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Call or Text</h3>
                 <a 
                   href="tel:+1-868-727-7371" 
                   className="text-3xl font-bold text-green-600 hover:text-green-700 transition-colors"
@@ -40,7 +40,7 @@ const ContactSection: React.FC = () => {
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Email Us</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Email</h3>
                 <a 
                   href="mailto:hyatali@hotmail.com" 
                   className="text-xl font-semibold text-green-600 hover:text-green-700 transition-colors break-all"
