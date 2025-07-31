@@ -106,7 +106,15 @@ const ImageGallery: React.FC = () => {
       src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/Master_closet_1_lwowxz.jpg",
       alt: "Master closet",
       caption: "Master closet"
+    },
+    {
+      src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/floor_plan_bmbqeb.jpg",
+      alt: "Floor plan",
+      caption: "Floor plan"
     }
+    
+    
+    
   ];
 
   // Preload all images when component mounts
