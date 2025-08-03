@@ -42,10 +42,10 @@ const ContactSection: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Email</h3>
                 <a 
-                  href="mailto:hyatali@hotmail.com" 
+                  href="mailto:house@sonikarustic.com" 
                   className="text-xl font-semibold text-green-600 hover:text-green-700 transition-colors break-all"
                 >
-                  hyatali@hotmail.com
+                  house@sonikarustic.com
                 </a>
                 <p className="text-gray-600 mt-2">Quick response guaranteed</p>
               </div>
