@@ -9,6 +9,7 @@ const Footer: React.FC = () => {
             <div className="text-center md:text-left">
               <div className="text-2xl font-bold text-green-400">$1,950,000</div>
               <div className="text-sm text-gray-400">Asking Price</div>
+              <div className="text-sm text-orange-500">Valued at $2,500,000</div>
             </div>
             <div className="hidden md:block text-gray-400">|</div>
             <div className="text-center md:text-left">

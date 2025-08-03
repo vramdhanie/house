@@ -9,9 +9,10 @@ const Header: React.FC = () => {
             <span className="ml-4 text-sm text-gray-500">Kelly Village, Caroni</span>
           </div>
           <div className="flex items-center space-x-4">
-            <div className="text-right">
+            <div className="text-center">
               <div className="text-lg font-semibold text-green-600">$1,950,000</div>
               <div className="text-sm text-gray-500">Asking Price</div>
+              <div className="text-sm text-gray-400">Valued at $2,500,000</div>
             </div>
           </div>
         </div>
