@@ -40,10 +40,10 @@ const Footer: React.FC = () => {
                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
               </svg>
               <a 
-                href="mailto:hyatali@hotmail.com" 
+                href="mailto:house@sonikarustic.com" 
                 className="text-green-400 hover:text-green-300 font-semibold"
               >
-                hyatali@hotmail.com
+                house@sonikarustic.com
               </a>
             </div>
           </div>
@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
         {/* Bottom bar */}
         <div className="mt-4 pt-4 border-t border-gray-800 text-center">
           <p className="text-sm text-gray-400">
-            © 2025 Spacious Family Home. All rights reserved.
+            © 2025 Sonika Rustic. All rights reserved.
           </p>
         </div>
       </div>
