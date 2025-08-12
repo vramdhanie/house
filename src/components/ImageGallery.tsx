@@ -7,7 +7,8 @@ interface ImageData {
 }
 
 const ImageGallery: React.FC = () => {
-  const [selectedImage, setSelectedImage] = useState(0);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
   const [imageErrors, setImageErrors] = useState<Set<number>>(new Set());
   const [preloadedImages, setPreloadedImages] = useState<Set<string>>(new Set());
 
@@ -156,6 +157,52 @@ const ImageGallery: React.FC = () => {
     console.log(`Successfully loaded image: ${images[index].src}`);
   };
 
+  const openLightbox = (index: number) => {
+    setSelectedImageIndex(index);
+    setIsLightboxOpen(true);
+  };
+
+  const closeLightbox = () => {
+    setIsLightboxOpen(false);
+  };
+
+  const goToNextImage = () => {
+    setSelectedImageIndex(prevIndex => (prevIndex + 1) % images.length);
+  };
+
+  const goToPreviousImage = () => {
+    setSelectedImageIndex(prevIndex => (prevIndex - 1 + images.length) % images.length);
+  };
+
+  // Handle keyboard shortcuts for lightbox navigation
+  useEffect(() => {
+    if (!isLightboxOpen) {
+      return;
+    }
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        closeLightbox();
+      } else if (event.key === 'ArrowRight') {
+        goToNextImage();
+      } else if (event.key === 'ArrowLeft') {
+        goToPreviousImage();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    // Prevent background scrolling while lightbox is open
+    const { body } = document;
+    const previousOverflow = body.style.overflow;
+    body.style.overflow = 'hidden';
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      body.style.overflow = previousOverflow;
+    };
+  }, [isLightboxOpen]);
+
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -166,17 +213,28 @@ const ImageGallery: React.FC = () => {
         {/* Main Image with Caption */}
         <div className="mb-8">
           <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg bg-gray-100">
-            <img
-              src={images[selectedImage].src}
-              alt={images[selectedImage].alt}
-              className="w-full h-full object-contain"
-              onError={() => handleImageError(selectedImage)}
-              onLoad={() => handleImageLoad(selectedImage)}
-            />
-            {/* Caption overlay */}
-            <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-75 text-white p-4">
-              <p className="text-lg font-medium">{images[selectedImage].caption}</p>
+            <button
+              type="button"
+              onClick={() => openLightbox(selectedImageIndex)}
+              className="group w-full h-full cursor-zoom-in"
+              aria-label="Open image in fullscreen"
+            >
+              <img
+                src={images[selectedImageIndex].src}
+                alt={images[selectedImageIndex].alt}
+                className="w-full h-full object-contain"
+                onError={() => handleImageError(selectedImageIndex)}
+                onLoad={() => handleImageLoad(selectedImageIndex)}
+              />
+            </button>
+            {/* Caption overlay for md+ screens only */}
+            <div className="hidden sm:block absolute bottom-0 left-0 right-0 bg-black/75 text-white p-4">
+              <p className="text-base md:text-lg font-medium">{images[selectedImageIndex].caption}</p>
             </div>
+          </div>
+          {/* Mobile caption below image (no overlay) */}
+          <div className="sm:hidden mt-2">
+            <p className="text-xs text-gray-700 text-center">{images[selectedImageIndex].caption}</p>
           </div>
         </div>
 
@@ -185,9 +243,9 @@ const ImageGallery: React.FC = () => {
           {images.map((image, index) => (
             <button
               key={index}
-              onClick={() => setSelectedImage(index)}
+              onClick={() => setSelectedImageIndex(index)}
               className={`relative w-20 h-20 md:w-24 md:h-24 rounded-lg overflow-hidden shadow-md transition-all duration-200 group ${
-                selectedImage === index 
+                selectedImageIndex === index 
                   ? 'ring-4 ring-green-500 scale-105' 
                   : 'hover:scale-105'
               }`}
@@ -218,10 +276,78 @@ const ImageGallery: React.FC = () => {
         {/* Image Counter */}
         <div className="text-center">
           <span className="text-sm text-gray-500">
-            {selectedImage + 1} of {images.length} photos
+            {selectedImageIndex + 1} of {images.length} photos
           </span>
         </div>
       </div>
+
+      {/* Lightbox Modal */}
+      {isLightboxOpen && (
+        <div
+          className="fixed inset-0 z-[100] bg-black bg-opacity-90 flex flex-col"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Image viewer"
+        >
+          <div className="flex items-center justify-between px-4 py-3">
+            <span className="text-white text-sm">
+              {selectedImageIndex + 1} / {images.length}
+            </span>
+            <button
+              type="button"
+              className="text-white hover:text-gray-200 focus:outline-none"
+              onClick={closeLightbox}
+              aria-label="Close image viewer"
+            >
+              <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+          <div className="relative flex-1 flex items-center justify-center px-4">
+            <img
+              src={images[selectedImageIndex].src}
+              alt={images[selectedImageIndex].alt}
+              className="max-w-full max-h-full object-contain select-none"
+              draggable={false}
+              onError={() => handleImageError(selectedImageIndex)}
+              onLoad={() => handleImageLoad(selectedImageIndex)}
+            />
+
+            {/* Previous Button */}
+            <button
+              type="button"
+              onClick={goToPreviousImage}
+              className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white rounded-full p-2 focus:outline-none"
+              aria-label="Previous image"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+
+            {/* Next Button */}
+            <button
+              type="button"
+              onClick={goToNextImage}
+              className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white rounded-full p-2 focus:outline-none"
+              aria-label="Next image"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+
+          {/* Caption */}
+          <div className="px-4 pb-4">
+            <p className="text-white text-center text-sm sm:text-base">
+              {images[selectedImageIndex].caption}
+            </p>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

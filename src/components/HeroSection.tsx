@@ -50,19 +50,19 @@ const HeroSection: React.FC = () => {
           <p className="text-xl md:text-2xl text-gray-200 mb-8">
             Located in Kelly Village
           </p>
-          <div className="flex flex-col sm:flex-row justify-center items-start space-y-4 sm:space-y-0 sm:space-x-8">
+          <div className="flex flex-col sm:flex-row justify-center items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-8">
             <div>
-            <div className="bg-white bg-opacity-90 rounded-lg px-6 py-4">
+            <div className="bg-white bg-opacity-90 rounded-lg px-6 py-4 text-center">
               <div className="text-3xl font-bold text-green-600">$1,950,000</div>
               <div className="text-sm text-gray-600">Asking Price</div>
             </div>
           <div className="text-xs text-white text-center">Valued at $2,500,000</div>
             </div>
-            <div className="bg-white bg-opacity-90 rounded-lg px-6 py-4">
+            <div className="bg-white bg-opacity-90 rounded-lg px-6 py-4 text-center">
               <div className="text-2xl font-bold text-gray-900">3,100 sq ft</div>
               <div className="text-sm text-gray-600">Living Space</div>
             </div>
-            <div className="bg-white bg-opacity-90 rounded-lg px-6 py-4">
+            <div className="bg-white bg-opacity-90 rounded-lg px-6 py-4 text-center">
               <div className="text-2xl font-bold text-gray-900">4 BR</div>
               <div className="text-sm text-gray-600">Bedrooms</div>
             </div>
