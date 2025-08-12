@@ -226,6 +226,28 @@ const ImageGallery: React.FC = () => {
                 onError={() => handleImageError(selectedImageIndex)}
                 onLoad={() => handleImageLoad(selectedImageIndex)}
               />
+
+              {/* Hover/Focus overlay cue */}
+              <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/20 focus-visible:bg-black/20 transition-colors">
+                <div className="opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span className="inline-flex items-center justify-center rounded-full bg-white/90 text-gray-900 shadow-md p-3">
+                    <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+
+              {/* Persistent corner badge hint */}
+              <div className="pointer-events-none absolute top-2 right-2 z-[1] inline-flex items-center gap-1 rounded-full bg-black/60 text-white px-2 py-1 text-[11px] sm:text-xs">
+                <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <span className="sm:hidden">Tap to expand</span>
+                <span className="hidden sm:inline">Click to enlarge</span>
+              </div>
             </button>
             {/* Caption overlay for md+ screens only */}
             <div className="hidden sm:block absolute bottom-0 left-0 right-0 bg-black/75 text-white p-4">
