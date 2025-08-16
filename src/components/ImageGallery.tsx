@@ -39,7 +39,7 @@ const ImageGallery: React.FC = () => {
         caption: "Side gate and high fence secure the backyard"
       },
     {
-      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/backyard.jpeg?alt=media&token=d7067685-16d7-4b1a-a510-a2ed31878c0d",
+      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/backyard.jpeg?alt=media&token=43c06ed2-3093-40bc-8a77-8d5039393ff6",
       alt: "Backyard",
       caption: "Backyard - space for outdoor toilet and storage room including water pump"
     },
@@ -74,12 +74,12 @@ const ImageGallery: React.FC = () => {
         caption: "Open concept"
       },
     {
-      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/dining_living.png?alt=media&token=16107177-8141-48b1-a277-0b8b2d64d36f",
+      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/dining_living.png?alt=media&token=bdd3423c-72a7-4c59-bb6c-232641883595",
       alt: "Dining and living area",
       caption: "Dining and living area"
     },
     {
-      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/bedroom.png?alt=media&token=ce9efca2-ad3a-4974-b8e3-4776ffe56b5d",
+      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/bedroom.png?alt=media&token=fcbfc790-b187-4724-976d-288bfc3bac6b",
       alt: "Additional bedroom",
       caption: "Bedroom"
     },
@@ -109,7 +109,7 @@ const ImageGallery: React.FC = () => {
       caption: "Master closet"
     },
     {
-      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/floor_plan.jpeg?alt=media&token=f490564b-a517-4f5a-810d-bec33a848978",
+      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/floor_plan.jpeg?alt=media&token=be32ff95-83d4-452f-b564-453bbcc00e43",
       alt: "Floor plan",
       caption: "Floor plan"
     }
