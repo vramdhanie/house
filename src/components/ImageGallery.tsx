@@ -84,27 +84,27 @@ const ImageGallery: React.FC = () => {
       caption: "Bedroom"
     },
     {
-      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/Master_bedroom.jpg?alt=media&token=4885d2de-d91e-47d1-a8b0-6abdc090aed2",
+      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/Master_bedroom.jpg?alt=media&token=2523edb2-18fb-4592-9e06-8f79da4d3d7f",
       alt: "Master bedroom",
       caption: "Master bedroom"
     },
     {
-      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/Master_bath_1.jpg?alt=media&token=4099593b-ffe9-494a-9238-e331eefdf563",
+      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/Master_bath_1.jpg?alt=media&token=0a6464e9-7bd5-461f-a874-8224ead31964",
       alt: "Master bathroom",
       caption: "Master bathroom"
     },
     {
-      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/Master_bath_2.jpg?alt=media&token=aeb37488-6a3a-4860-9eb9-03ef78a418bd",
+      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/Master_bath_2.jpg?alt=media&token=b49e3c50-cdd8-4e87-b10a-e2eef4783ca4",
       alt: "Additional master bathroom angle",
       caption: "Master bathroom"
     },
     {
-      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/Master_closet_2.jpg?alt=media&token=dc30af67-cb1a-49b6-a528-91535d45cb92",
+      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/Master_closet_1.jpg?alt=media&token=408f0f89-f630-4a42-9cba-89df4c3fce1d",
       alt: "Master closet",
       caption: "Master closet"
     },
     {
-      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/Master_closet_1.jpg?alt=media&token=f79b3492-fe6d-403a-b9ec-6c30f053b27c",
+      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/Master_closet_1.jpg?alt=media&token=408f0f89-f630-4a42-9cba-89df4c3fce1d",
       alt: "Master closet",
       caption: "Master closet"
     },
