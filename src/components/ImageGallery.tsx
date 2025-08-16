@@ -34,7 +34,7 @@ const ImageGallery: React.FC = () => {
       caption: "Main entrance"
     },
     {
-        src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/side_gate.jpeg?alt=media&token=28e5289a-1629-4908-8c27-86c834279cda",
+        src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/side_gate.jpeg?alt=media&token=93d0dc19-865b-4cfa-bbd8-f829d15d9bcb",
         alt: "Side gate",
         caption: "Side gate and high fence secure the backyard"
       },
@@ -49,7 +49,7 @@ const ImageGallery: React.FC = () => {
         caption: "Lime tree in the backyard"
       },
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/pedestrian_gate.jpeg?alt=media&token=db6a0381-b200-42f9-b6af-516b0d35b171",
+        src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/pedestrian_gate.jpeg?alt=media&token=168c41f1-165e-4767-bc4c-bf948fabe049",
         alt: "Pedestrian gate",
         caption: "Pedestrian gate"
       },
