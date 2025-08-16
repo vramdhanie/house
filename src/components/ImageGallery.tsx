@@ -19,7 +19,7 @@ const ImageGallery: React.FC = () => {
       caption: "Large front yard with driveway and pedestrian walkway"
     },
     {
-      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/front_yard.jpeg?alt=media&token=43582e0a-c92e-4e0b-80f2-d0db968eba20",
+      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/front_yard.jpeg?alt=media&token=6da4eb3b-9321-42f5-b0c6-41eb0f28b4b8",
       alt: "Front view of the property",
       caption: "Remote control garage"
     },
@@ -29,7 +29,7 @@ const ImageGallery: React.FC = () => {
         caption: "Another view of front yard"
       },
     {
-      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/Front_door.jpg?alt=media&token=73c12607-3b0b-468d-ab05-1dc76aca709f",
+      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/Front_door.jpg?alt=media&token=79a2c954-6b1f-4097-93e8-a4f19c883ab0",
       alt: "Front door entrance",
       caption: "Main entrance"
     },
@@ -59,7 +59,7 @@ const ImageGallery: React.FC = () => {
         caption: "Kitchen - recently renovated"
       },
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/kitchen_detail.jpeg?alt=media&token=ef337e41-f6f7-4d63-91a5-b435a527af91",
+        src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/kitchen_detail.jpeg?alt=media&token=f0480e14-3d46-442e-b7dd-b931b20826f7",
         alt: "Kitchen detail",
         caption: "Kitchen detail"
       },
