@@ -14,102 +14,102 @@ const ImageGallery: React.FC = () => {
 
   const images: ImageData[] = [
     {
-      src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/exterior2_s6rioz.png",
+      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/exterior2.png?alt=media&token=8159b070-b085-4501-b292-7d2c2c63192d",
       alt: "Side view of the property",
       caption: "Large front yard with driveway and pedestrian walkway"
     },
     {
-      src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/front_yard_bq97p9.jpg",
+      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/front_yard.jpeg?alt=media&token=43582e0a-c92e-4e0b-80f2-d0db968eba20",
       alt: "Front view of the property",
       caption: "Remote control garage"
     },
     {
-        src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/exterior5_racs9m.jpg",
+        src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/exterior5.jpeg?alt=media&token=e8cc6048-d84b-4246-a2e5-0fe35f67853f",
         alt: "Side view of the property",
         caption: "Another view of front yard"
       },
     {
-      src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/Front_door_iz4obu.jpg",
+      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/Front_door.jpg?alt=media&token=73c12607-3b0b-468d-ab05-1dc76aca709f",
       alt: "Front door entrance",
       caption: "Main entrance"
     },
     {
-        src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/side_gate_yxnlle.jpg",
+        src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/side_gate.jpeg?alt=media&token=28e5289a-1629-4908-8c27-86c834279cda",
         alt: "Side gate",
         caption: "Side gate and high fence secure the backyard"
       },
     {
-      src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/backyard_eqxofy.jpg",
+      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/backyard.jpeg?alt=media&token=d7067685-16d7-4b1a-a510-a2ed31878c0d",
       alt: "Backyard",
       caption: "Backyard - space for outdoor toilet and storage room including water pump"
     },
     {
-        src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/limetree_qk4tvb.jpg",
+        src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/limetree.jpeg?alt=media&token=558adf95-51cf-4362-b0ee-eb53d1f2a940",
         alt: "Lime tree",
         caption: "Lime tree in the backyard"
       },
       {
-        src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/pedestrian_gate_y8j4nq.jpg",
+        src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/pedestrian_gate.jpeg?alt=media&token=db6a0381-b200-42f9-b6af-516b0d35b171",
         alt: "Pedestrian gate",
         caption: "Pedestrian gate"
       },
     {
-        src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/kitchen_nop6sm.png",
+        src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/kitchen.png?alt=media&token=f0506b2b-b071-4bf5-8822-866d1bb2eb90",
         alt: "Modern kitchen",
         caption: "Kitchen - recently renovated"
       },
       {
-        src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/kitchen_detail_imof4d.jpg",
+        src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/kitchen_detail.jpeg?alt=media&token=ef337e41-f6f7-4d63-91a5-b435a527af91",
         alt: "Kitchen detail",
         caption: "Kitchen detail"
       },
     {
-      src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/livingroom_vveth5.png",
+      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/livingroom.png?alt=media&token=1af51bcc-46ff-450b-9203-90868e73abe7",
       alt: "Spacious living room",
       caption: "Living room"
     },
     {
-        src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/living_room_ohy2y2.jpg",
+        src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/livingroom.png?alt=media&token=1af51bcc-46ff-450b-9203-90868e73abe7",
         alt: "Spacious living room",
         caption: "Open concept"
       },
     {
-      src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/dining_living_xbxulo.png",
+      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/dining_living.png?alt=media&token=16107177-8141-48b1-a277-0b8b2d64d36f",
       alt: "Dining and living area",
       caption: "Dining and living area"
     },
     {
-      src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/bedroom_p1446l.png",
+      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/bedroom.png?alt=media&token=ce9efca2-ad3a-4974-b8e3-4776ffe56b5d",
       alt: "Additional bedroom",
       caption: "Bedroom"
     },
     {
-      src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/Master_bedroom_fldj0z.jpg",
+      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/Master_bedroom.jpg?alt=media&token=4885d2de-d91e-47d1-a8b0-6abdc090aed2",
       alt: "Master bedroom",
       caption: "Master bedroom"
     },
     {
-      src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/Master_bath_1_tmirps.jpg",
+      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/Master_bath_1.jpg?alt=media&token=4099593b-ffe9-494a-9238-e331eefdf563",
       alt: "Master bathroom",
       caption: "Master bathroom"
     },
     {
-      src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/Master_bath_2_xvz9r4.jpg",
+      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/Master_bath_2.jpg?alt=media&token=aeb37488-6a3a-4860-9eb9-03ef78a418bd",
       alt: "Additional master bathroom angle",
       caption: "Master bathroom"
     },
     {
-      src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/Master_closet_2_kqenpd.jpg",
+      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/Master_closet_2.jpg?alt=media&token=dc30af67-cb1a-49b6-a528-91535d45cb92",
       alt: "Master closet",
       caption: "Master closet"
     },
     {
-      src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/Master_closet_1_lwowxz.jpg",
+      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/Master_closet_1.jpg?alt=media&token=f79b3492-fe6d-403a-b9ec-6c30f053b27c",
       alt: "Master closet",
       caption: "Master closet"
     },
     {
-      src: "https://res.cloudinary.com/dp5tvvzhl/image/upload/v1753662716/house/floor_plan_bmbqeb.jpg",
+      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/floor_plan.jpeg?alt=media&token=f490564b-a517-4f5a-810d-bec33a848978",
       alt: "Floor plan",
       caption: "Floor plan"
     }
