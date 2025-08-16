@@ -44,7 +44,7 @@ const ImageGallery: React.FC = () => {
       caption: "Backyard - space for outdoor toilet and storage room including water pump"
     },
     {
-        src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/limetree.jpeg?alt=media&token=558adf95-51cf-4362-b0ee-eb53d1f2a940",
+        src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/limetree.jpeg?alt=media&token=adf40166-eba9-4c4c-8e5e-52cee718f9c4",
         alt: "Lime tree",
         caption: "Lime tree in the backyard"
       },
@@ -54,7 +54,7 @@ const ImageGallery: React.FC = () => {
         caption: "Pedestrian gate"
       },
     {
-        src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/kitchen.png?alt=media&token=f0506b2b-b071-4bf5-8822-866d1bb2eb90",
+        src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/kitchen.png?alt=media&token=e7f46fc1-1791-49b3-b00f-756451109202",
         alt: "Modern kitchen",
         caption: "Kitchen - recently renovated"
       },
@@ -64,12 +64,12 @@ const ImageGallery: React.FC = () => {
         caption: "Kitchen detail"
       },
     {
-      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/livingroom.png?alt=media&token=1af51bcc-46ff-450b-9203-90868e73abe7",
+      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/livingroom.png?alt=media&token=34472cb7-4459-4953-bd31-553d03ee4c42",
       alt: "Spacious living room",
       caption: "Living room"
     },
     {
-        src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/livingroom.png?alt=media&token=1af51bcc-46ff-450b-9203-90868e73abe7",
+        src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/living_room.jpeg?alt=media&token=9fa0c0d7-2ac4-468f-b3d2-387210313d47",
         alt: "Spacious living room",
         caption: "Open concept"
       },
