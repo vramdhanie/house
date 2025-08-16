@@ -14,7 +14,7 @@ const ImageGallery: React.FC = () => {
 
   const images: ImageData[] = [
     {
-      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/exterior2.png?alt=media&token=8159b070-b085-4501-b292-7d2c2c63192d",
+      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/exterior2.png?alt=media&token=60fcdb02-8d62-483c-a3a2-4ba078ae1835",
       alt: "Side view of the property",
       caption: "Large front yard with driveway and pedestrian walkway"
     },
@@ -24,7 +24,7 @@ const ImageGallery: React.FC = () => {
       caption: "Remote control garage"
     },
     {
-        src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/exterior5.jpeg?alt=media&token=e8cc6048-d84b-4246-a2e5-0fe35f67853f",
+        src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/exterior5.jpeg?alt=media&token=024cfc95-ae85-49db-ad7b-aa9eaaaa78a9",
         alt: "Side view of the property",
         caption: "Another view of front yard"
       },
@@ -99,7 +99,7 @@ const ImageGallery: React.FC = () => {
       caption: "Master bathroom"
     },
     {
-      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/Master_closet_1.jpg?alt=media&token=408f0f89-f630-4a42-9cba-89df4c3fce1d",
+      src: "https://firebasestorage.googleapis.com/v0/b/sonika-rustic.firebasestorage.app/o/Master_closet_2.jpg?alt=media&token=759b339f-af1d-4750-b90b-01733e3f40ba",
       alt: "Master closet",
       caption: "Master closet"
     },
