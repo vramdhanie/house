@@ -311,62 +311,95 @@ const ImageGallery: React.FC = () => {
           aria-modal="true"
           aria-label="Image viewer"
         >
-          <div className="flex items-center justify-between px-4 py-3">
-            <span className="text-white text-sm">
-              {selectedImageIndex + 1} / {images.length}
-            </span>
-            <button
-              type="button"
-              className="text-white hover:text-gray-200 focus:outline-none"
-              onClick={closeLightbox}
-              aria-label="Close image viewer"
-            >
-              <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <line x1="18" y1="6" x2="6" y2="18"></line>
-                <line x1="6" y1="6" x2="18" y2="18"></line>
-              </svg>
-            </button>
+          {/* Header with close button */}
+          <div className="flex items-center px-4 py-3 flex-shrink-0">
+            <div className="flex-1">
+              <span className="text-white text-sm">
+                {selectedImageIndex + 1} / {images.length}
+              </span>
+            </div>
+            <div className="text-white text-center flex-1">
+              <span className="text-lg font-bold text-green-400">$1.95M</span>
+              <span className="text-sm text-gray-300 ml-2">(Priced below value!)</span>
+            </div>
+            <div className="flex-1 flex justify-end">
+              <button
+                type="button"
+                className="text-white hover:text-gray-200 focus:outline-none"
+                onClick={closeLightbox}
+                aria-label="Close image viewer"
+              >
+                <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </button>
+            </div>
           </div>
-          <div className="relative flex-1 flex items-center justify-center px-4">
-            <img
-              src={images[selectedImageIndex].src}
-              alt={images[selectedImageIndex].alt}
-              className="max-w-full max-h-full object-contain select-none"
-              draggable={false}
-              onError={() => handleImageError(selectedImageIndex)}
-              onLoad={() => handleImageLoad(selectedImageIndex)}
-            />
 
-            {/* Previous Button */}
-            <button
-              type="button"
-              onClick={goToPreviousImage}
-              className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white rounded-full p-2 focus:outline-none"
-              aria-label="Previous image"
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
+          {/* Image container with proper constraints */}
+          <div className="relative flex-1 flex items-center justify-center px-4 py-2 min-h-0">
+            <div className="relative w-full h-full flex items-center justify-center">
+              <img
+                src={images[selectedImageIndex].src}
+                alt={images[selectedImageIndex].alt}
+                className="max-w-full max-h-full w-auto h-auto object-contain select-none"
+                style={{
+                  maxWidth: 'calc(100vw - 2rem)',
+                  maxHeight: 'calc(100vh - 8rem)'
+                }}
+                draggable={false}
+                onError={() => handleImageError(selectedImageIndex)}
+                onLoad={() => handleImageLoad(selectedImageIndex)}
+              />
 
-            {/* Next Button */}
-            <button
-              type="button"
-              onClick={goToNextImage}
-              className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white rounded-full p-2 focus:outline-none"
-              aria-label="Next image"
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
+              {/* Previous Button */}
+              <button
+                type="button"
+                onClick={goToPreviousImage}
+                className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white rounded-full p-2 focus:outline-none transition-colors"
+                aria-label="Previous image"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+
+              {/* Next Button */}
+              <button
+                type="button"
+                onClick={goToNextImage}
+                className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white rounded-full p-2 focus:outline-none transition-colors"
+                aria-label="Next image"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
           </div>
 
           {/* Caption */}
-          <div className="px-4 pb-4">
+          <div className="px-4 pb-4 flex-shrink-0">
             <p className="text-white text-center text-sm sm:text-base">
               {images[selectedImageIndex].caption}
             </p>
+          </div>
+
+          {/* Callout in bottom left */}
+          <div className="absolute bottom-20 left-4 z-10">
+            <div className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg shadow-lg transition-colors duration-200">
+              <a 
+                href="tel:+1-868-727-7371"
+                className="flex items-center gap-2 font-semibold text-sm sm:text-base"
+                aria-label="Call (868) 727-7371 now"
+              >
+                <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                </svg>
+                Call 727-7371 now!
+              </a>
+            </div>
           </div>
         </div>
       )}
