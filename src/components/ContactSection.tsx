@@ -1,4 +1,15 @@
+import { useEffect } from 'react';
 const ContactSection: React.FC = () => {
+  useEffect(() => {
+    // Load the Fillout script if it hasn't been loaded already
+    if (!document.querySelector('script[src="https://server.fillout.com/embed/v1/"]')) {
+      const script = document.createElement('script');
+      script.src = 'https://server.fillout.com/embed/v1/';
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, []);
+
   return (
     <section className="py-16 bg-green-600">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -52,7 +63,19 @@ const ContactSection: React.FC = () => {
             </div>
           </div>
 
-          
+          {/* Embedded Contact Form */}
+          <div className="mt-16 max-w-4xl mx-auto">
+            <h3 className="text-2xl font-bold text-white mb-6 text-center">
+              Send us a Message
+            </h3>
+            <div 
+              style={{width: '100%', height: '500px'}} 
+              data-fillout-id="jtMZM13uk9us" 
+              data-fillout-embed-type="standard" 
+              data-fillout-inherit-parameters 
+              data-fillout-dynamic-resize
+            ></div>
+          </div>
         </div>
       </div>
     </section>
